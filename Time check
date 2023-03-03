@@ -1,0 +1,14 @@
+def funcfortime(IB,ID):
+    IB = int(IB)
+    ID = int(ID)
+    if IB>1 and IB<=23 and ID>1 and ID<59:
+        if IB >12:
+            print (f'Time is {IB} : {ID} (Time type is 24h)')
+        else:
+            print (f'Time is {IB} : {ID} PM (Time type is 12)')
+    else:
+        print('Your input is Wrong.')
+
+IB = input('Enter first number:')
+ID = input('Enter your second number:')
+funcfortime(IB,ID)
