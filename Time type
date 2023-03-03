@@ -1,0 +1,11 @@
+Hour = input('Enter first number:')
+Minute = input('Enter your second number:')
+Hour = int(Hour)
+Minute = int(Minute)
+if Hour>1 and Hour<=23 and Minute>1 and Minute<59:
+    if Hour>12:
+        print ('Time type is 24')
+    else :
+        print('Time type is 12(PM)')
+else:
+    print('Your input is wrong.')
